@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Comparativa - Cuero Cabelludo Seco vs Caspa</title>
+    <style>
+        * {margin: 0;padding: 0;box-sizing: border-box;}
+
+        body {font-family: 'Arial', sans-serif;padding: 40px 20px;min-height: 100vh;}
+
+        table{
+            padding: 20px;
+            background-color: #c9ebf5;
+            max-width: 930px;
+            margin: 0 auto;
+            overflow: hidden;
+            box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        }
+
+        .table-wrapper {border-radius: 30px;}
+
+        table {width: 100%;border-collapse: collapse;}
+
+        th, td {padding: 25px 55px;text-align: center;}
+
+        /* Header row */
+        thead th {
+            font-size: 30px;
+            font-weight: 700;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        thead th:first-child {color: #1e3a5f; font-size: 36px;}
+
+        thead th:nth-child(2) {
+            background: linear-gradient(135deg, #1890d5 0%, #0d7abf 100%);
+        }
+
+        thead th:last-child {
+            background: linear-gradient(135deg, #2ba3d9 0%, #1890d5 100%);
+            border-radius: 0 30px 0 0;
+        }
+
+        /* Row styling */
+        tbody tr { border-bottom: 2px solid #e0e0e0;}
+        tbody tr:last-child {border-bottom: none;}
+
+        /* First column (labels) */
+        tbody td:first-child {
+            background: #e8f5f9;
+            text-align: left;
+            font-weight: 600;
+            color: #1e3a5f;
+            font-size: 20px;
+            position: relative;
+            padding-left: 90px;
+        }
+
+        tbody td:first-child::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 45px;
+            height: 45px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* Icons for each row */
+        tbody tr:nth-child(1) td:first-child::before {
+            content: '🔍';
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        tbody tr:nth-child(2) td:first-child::before {
+            content: '🔬';
+            font-size: 30px;
+        }
+
+        tbody tr:nth-child(3) td:first-child::before {
+            content: '✋';
+            font-size: 30px;
+        }
+
+        tbody tr:nth-child(4) td:first-child::before {
+            content: '⚠️';
+            font-size: 30px;
+        }
+
+        tbody tr:nth-child(5) td:first-child::before {
+            content: '➕';
+            font-size: 30px;
+        }
+
+        /* Content columns */
+        tbody td:nth-child(2),
+        tbody td:nth-child(3) {
+            color: white;
+            font-size: 18px;
+            line-height: 1.2;
+        }
+
+        tbody td:nth-child(2) { background: linear-gradient(135deg, #1890d5 0%, #0d7abf 100%);}
+        tbody td:nth-child(3) {background: linear-gradient(135deg, #2ba3d9 0%, #1890d5 100%);}
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            th, td {
+                padding: 20px 15px;
+                font-size: 14px;
+            }
+
+            thead th {
+                font-size: 22px;
+            }
+
+            thead th:first-child {
+                font-size: 24px;
+            }
+
+            tbody td:first-child {
+                font-size: 16px;
+                padding-left: 70px;
+            }
+
+            tbody td:first-child::before {
+                left: 20px;
+                width: 35px;
+                height: 35px;
+                font-size: 25px;
+            }
+
+            tbody td:nth-child(2),
+            tbody td:nth-child(3) {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            th, td {padding: 20px 10px;font-size: 14px;}
+            thead th {font-size: 18px;}
+            thead th:first-child {font-size: 20px;}
+
+            tbody td:first-child {
+                font-size: 15px;
+                padding-left: 15px;
+                padding-top: 60px;
+                text-align: center;
+            }
+            
+            tbody td:first-child::before {
+                left: 40%;
+                top:40px;
+                width: 30px;
+                height: 30px;
+                font-size: 20px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table class="table-wrapper">
+        <thead>
+            <tr>
+                <th>Aspecto</th>
+                <th>Cuero cabelludo seco</th>
+                <th>Caspa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Causa principal</td>
+                <td>Falta de sebo natural y pérdida de humedad.</td>
+                <td>Proliferación del hongo Malassezia que irrita el cuero cabelludo.</td>
+            </tr>
+            <tr>
+                <td>Apariencia de las escamas</td>
+                <td>Pequeñas, finas y blancas.</td>
+                <td>Grandes, amarillentas o blancas, a veces grasosas.</td>
+            </tr>
+            <tr>
+                <td>Sensación</td>
+                <td>Tirantez, sensibilidad, sequedad en el cuero cabelludo.</td>
+                <td>Picazón intensa, descamación visible, irritación.</td>
+            </tr>
+            <tr>
+                <td>Factores que lo agravan</td>
+                <td>Clima frío, baños con agua caliente, calor excesivo, productos agresivos.</td>
+                <td>Estrés, exceso de grasa en el cuero cabelludo, falta de higiene adecuada.</td>
+            </tr>
+            <tr>
+                <td>Tratamiento base</td>
+                <td>Hidratación, shampoos nutritivos con miel, aceites naturales y fórmulas suaves.</td>
+                <td><a href="https://www.headandshoulders-la.com/es/ver-productos" style="font-weight: bold; color: white;">Shampoos control caspa con ingredientes activos como Piroctona Olamina</a> o Piritionato de zinc.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
